@@ -1,0 +1,310 @@
+/*Desktop layout sizes */
+@media only screen and (max-width: 1025px) {
+} 
+
+/*laptop*/
+@media only screen and (max-width:600px) {
+}
+
+/*Tablet LandScapes*/
+@media only screen and (min-width:768px) and (max-width:1024px) {
+}
+
+/*Phone Landscape*/
+@media only screen and (min-width:321px) and (max-width: 600px) {
+}
+
+/*Typical Phone Portrait*/
+@media only screen and (max-width:320px) {
+}
+
+
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+	font-weight: bold;
+}
+
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+/*--------Fila principal das casas--------*/
+
+th[scope="col"] {
+    background-color: #696969;
+    color: rgb(193, 167, 167);
+}
+
+
+
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+
+}
+
+
+table {
+    border: 2px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: .8rem;
+	margin-left: 20em;
+	margin-top: 7em;
+	table-layout: fixed;
+}
+ 
+.btn-login{
+	width: 5rem;
+	height: 2rem;
+	left: 30em;
+	position: absolute;
+	border-radius: 25px;
+	background: linear-gradient(to right, #c20202, #0411c0); 
+	color: rgb(157, 134, 134);
+	font-weight: 600;
+	cursor: pointer;
+	background-size: 200%;
+	transition: 5s ease-in-out;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+
+/* Refere-se a configurações da mesa das cartas*/
+body{
+	height:100%;
+	margin: 0 auto;
+	padding-top: 0;
+}   
+
+
+/*---------layout principal-----------*/
+.section-bar {
+	height: 150rem;
+}
+
+		
+/*Topo do site*/
+#header {
+	width: 100%;
+	height:6.57rem; /*----trabalha a altura da barra border-bottom pra cima-----*/
+	border-bottom: rgba(255, 253, 253, 0.903) thick double;
+	background: linear-gradient(to right, #48090e, #681127); 
+}
+
+/*-----Trabalha a regiao entre a linha da header e o titulo gerador de jogadas----------*/
+.innertube{
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+
+/*--------Trabalha a regiao do body------*/
+.innertube1{ 
+	height:150em;
+	background: linear-gradient(to left, #5f5b61, #36215e);  
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+
+
+
+/*------trabalha a fonte da header-----*/
+.font-header{
+	position: absolute;
+	padding: 20px;
+	left: 29.66em;
+	top: -0.50em;
+	color:rgb(56, 6, 56); 
+	font-family: 'Lobster', cursive; 
+	text-shadow: -1px -1px, 1px 1px #FFF8DC, 
+	1px 0 5px #ffffff;
+	font-size:39px;
+	clear: right;
+	
+	
+}
+
+.title-h1{ 
+/*-----titulo do gerador de jogadas-----*/
+	margin-top: 3rem;
+	text-align: center;
+	font-size: 2.50em;
+	color:rgb(54, 9, 91); 
+	font-family: 'Lobster', cursive; 
+	text-shadow: -1px -1px, 1px 1px #ffffff, 1px 0 5px #ffffff;
+}
+
+/*------------Ala inferior do layout------------*/
+#footer {
+	left: 0;
+	bottom: 30em;
+	width: 100%;
+	height: 25px; 
+   /* Disables scrollbars on the footer frame. 
+	To enable scrollbars, change "hidden" to "scroll" */
+	background: linear-gradient(to right, #48090e, #681127); 
+	border-top: rgba(255, 255, 255, 0.903) thick double;
+}
+
+		
+/*---------Ala de Navegação----------*/
+/*#nav {
+	list-style: none; 
+	background: #3e015b;
+	border-right:hsl(0, 0%, 0%) solid 4px;	
+}*/
+
+
+
+/*----------------trabalha o menu em conjunto da logo-----------*/
+.img-jpg{
+	width:5rem;
+	height:5rem;
+	top: 40px;
+	right: 20em;
+}
+
+   .img-geometrystar{
+	position: absolute;
+	padding: 20px 20px;
+	max-width:10rem;
+	max-height:10rem;
+	width:7rem;
+	left: 85em;
+	top: -1.18em;
+
+}
+
+
+/*----------Nav-------------*/
+.navbar-tarot{
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.menu{
+	padding-top: -6em;
+	font-size: 1.30em;
+	position: relative;
+	top: -2.22em;
+}
+
+
+.Tarot{
+	position: relative;
+	text-shadow: -1px -1px, 1px 1px #FFF8DC, 
+	1px 0 5px #dab627, -1px -1px #FFF8DC;
+	margin-left: 20px;
+}
+
+.titulo{
+	position: relative;
+	text-shadow: -1px -1px, 1px 1px #FFF8DC, 
+	1px 0 5px #dab627, -1px -1px #FFF8DC;
+	margin-left: 1em;
+}
+
+.astros{
+	position: relative;
+	text-shadow: -1px -1px, 1px 1px #FFF8DC, 
+	1px 0 5px #dab627, -1px -1px #FFF8DC;
+	margin-left: 1em;
+}
+
+nav ul {
+	list-style-type: none;
+}
+/*--link ainda nao visitado--*/
+a:link {
+	color: black;
+	text-decoration: none;
+}
+/*---link visitado--*/
+a:visited {
+	background: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(68, 68, 68);
+	border-radius: 20px;
+}
+/*--link assim que clicado(ativo)---*/
+a:focus {
+	color: orange;
+}
+
+
+/*-----fonte letras select input----*/
+
+.innertube-font{
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 1.30em;
+	font-weight: bolder;
+}
+
+
+/* ----abas de seleção de opções-----*/
+
+#metodo{
+margin-left: 0rem;
+height: 30px;
+border-radius: 25px;
+text-shadow:  1px 0 1px, 1px 0 5px rgb(240, 241, 242);
+}
+
+#tipo{
+	height: 30px;
+	border-radius: 25px;
+	text-shadow: 1px 0 1px, 1px 0 5px rgb(240, 241, 242);
+}
+
+#taro{
+	height: 30px;
+	border-radius: 25px;
+	text-shadow: 1px 0 1px, 1px 0 5px rgb(240, 241, 242);
+}
+
+p {
+	color: rgb(153, 147, 147);
+}
+
+/*---------botao Selecionar---------*/
+#enviar{
+	border-radius: 25px;
+	width: 8rem;
+	text-align: center;
+	text-shadow: 1px -1px, 1px 0 1px, 1px 0 5px gray ;
+	background: linear-gradient(to right, #070070, #300045); 
+	color: rgb(190, 190, 190);
+	height: 2.15em;
+	margin-left: 3em;
+}
+
+#enviar:hover{
+	color: white;
+}
+
+/*------------------------------------*/
+
+
+
+
+		
+
+/*IE6 fix*/
+
+/* Set the first value to the height of the header, 
+	the third value to the height of the footer, 
+	and last value to the width of the nav */
