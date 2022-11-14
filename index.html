@@ -1,0 +1,153 @@
+<?php
+
+
+
+include('php/pergunta.php');
+
+
+
+
+
+?>
+
+
+
+
+
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<html lang="pt-br">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarot Prático</title>
+	<link rel="stylesheet" type="text/css"  href="estilo.css" />
+	<script src="./script.js"></script>
+</head>
+
+<body>
+		<header id="header">
+		<div class="img-jpg">
+	<img src="./cossstar3.svg" class="img-geometrystar">
+		</div>
+
+		  <div class="innertube">
+			 <p class="font-header">
+			 Tarot Prático </p>
+			 </div>
+
+<nav class="navbar">
+
+		<div class="navbar-tarot">
+		   <ul class="menu">
+			   <a href="./index.php" class="Tarot" style="font-size:30px; 
+				   font-family: 'Bebas Neue', cursive;">
+				Tarôt </a>
+
+				<a class="titulo" style="font-size:30px; 
+				font-family: 'Bebas Neue', cursive;">
+				Título</a>
+
+				<a href="./astro.php" class="astros" style="font-size:30px; 
+				font-family: 'Bebas Neue', cursive;">
+			    Astros</a>
+				<button class="btn-login" onclick="GFG_Fun()"> Sign Up </button>
+						<p id="GFG_DOWN"></p>
+
+ 			</div> <!--navbar tarot-->
+		
+	</nav>	
+</header>
+
+<section class="section-bar">
+	 <div class="innertube1">
+			
+			<h1 class="title-h1">
+			   Gerador de Jogadas </h1>
+
+			
+			
+			<form action="index.php" method="POST">
+				<fieldset style="width: 50%; margin-left:20em;">
+					<?php //var_dump($cartasMaioresNome); ?>
+						<p class="innertube-font">
+							<label for="metodo">Selecione um método: </label>
+
+							<select id="metodo" name="metodo">
+
+							  <option <?php if ($metodo == 1) echo 'selected="selected" ' ?> value="1"> 1 Carta</option>
+
+							  <option <?php if ($metodo == 2) echo 'selected="selected"' ?> value="2"> 2 Cartas</option>
+
+							  <option <?php if ($metodo == 3) echo 'selected="selected" ' ?> value="3">3 Cartas</option>
+
+							  <option <?php if ($metodo == 4) echo 'selected="selected" '?> value="4">4 Cartas</option>
+
+							  <option <?php if ($metodo == 5) echo 'selected="selected" ' ?> value="5">5 Cartas</option>
+
+							  <option <?php if ($metodo == 6) echo 'selected="selected" '?> value="6">Peladan</option>
+
+							  <option <?php if ($metodo == 7) echo 'selected="selected" ' ?> value="7">Cruz Celta</option>
+
+							  <option <?php if ($metodo == 8) echo 'selected="selected" ' ?> value="8">Templo de Afrodite</option>
+
+							  <option <?php if ($metodo == 9) echo 'selected="selected" ' ?> value="9">Mandala Astrológica</option>
+
+							</select>
+
+						</p>
+
+
+
+						<p class="innertube-font">
+							<label for="tipo">Selecione um tipo: </label>
+							<select id="tipo" name="tipo">
+							  <option <?php if ($tipo == 1) echo 'selected="selected" ' ?> value="1">Americano (78 cartas)</option>
+							  <option <?php if ($tipo == 2) echo 'selected="selected" ' ?> value="2">Apenas Arcanos Maiores</option>
+							  <option <?php if ($tipo == 3) echo 'selected="selected" ' ?> value="3">Europeu (Maiores+Menor)</option>
+							</select>
+
+						</p>
+
+						<p class="innertube-font">
+
+							<label for="taro">Selecione o tarôt: </label>
+							<select id="taro" name="taro">
+							  <option <?php if ($taro == 1) echo 'selected="selected" ' ?> value="1">Thoth</option>
+							  <option <?php if ($taro == 2) echo 'selected="selected" ' ?> value="2">RWS</option>
+							  <option <?php if ($taro == 3) echo 'selected="selected" ' ?> value="3">Marselha</option>
+							</select>
+						</p>
+
+
+					<p>
+						<input type="submit" value="Selecionar Cartas" id="enviar">
+					</p>
+					</fieldset>
+					
+
+					<?php
+
+						include('php/resposta.php');
+
+					?>
+
+					</form>
+
+
+			</div>
+     </section>
+
+		
+
+	
+		<footer id="footer">
+			
+		</footer>	
+
+</body>
+</html>
